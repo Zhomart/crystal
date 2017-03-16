@@ -22,6 +22,7 @@ branches:
   only:
     - master
     - /\Arelease\/.+\z/
+    - fix-travis-osx
 notifications:
   irc:
     channels:
