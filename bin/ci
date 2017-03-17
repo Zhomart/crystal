@@ -78,7 +78,11 @@ on_osx() {
 }
 
 prepare_system() {
-  on_osx brew update && cd $( brew --prefix ) && git checkout c596d088 Library/Formula/llvm.rb
+  on_osx brew update
+  on_osx brew --prefix
+  on_osx cd $( brew --prefix )
+  on_osx pwd
+  on_osx git checkout c596d088 Library/Formula/llvm.rb
   on_deploy sudo pip install awscli
 }
 
